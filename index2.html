@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>  
+    <title>三泰互联</title>
+    <link rel="stylesheet"href="css/bootstrap.css">
+    <script>!function(a,b,c,d){var e=navigator.userAgent,f={os:{windows:[{pattern:"Windows NT (\\d+)[^0-9\\s ](\\d+)",alias:"WindowsNT"},{pattern:"Windows (\\d+)",alias:"Windows"}],osx:[{pattern:"Mac OS X (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"OSX"},{pattern:"Mac OS X (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"OSX"},{pattern:"Mac OS X (\\d+)[^0-9\\s ](\\d+)",alias:"OSX"},{pattern:"Mac OS X (\\d+)",alias:"OSX"}],android:[{pattern:"Android (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"Android"},{pattern:"Android (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"Android"},{pattern:"Android (\\d+)[^0-9\\s ](\\d+)",alias:"Android"},{pattern:"Android (\\d+)",alias:"Android"}],ios:[{pattern:"iPhone[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"iOS"},{pattern:"iPhone[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"iOS"},{pattern:"iPhone[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)",alias:"iOS"},{pattern:"iPhone[^;]*;.+OS (\\d+)",alias:"iOS"},{pattern:"iPad[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"iOS"},{pattern:"iPad[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"iOS"},{pattern:"iPad[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)",alias:"iOS"},{pattern:"iPad[^;]*;.+OS (\\d+)",alias:"iOS"},{pattern:"iPod[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"iOS"},{pattern:"iPod[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"iOS"},{pattern:"iPod[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)",alias:"iOS"},{pattern:"iPod[^;]*;.+OS (\\d+)",alias:"iOS"}],iphone:[{pattern:"iPhone[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"iPhone"},{pattern:"iPhone[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"iPhone"},{pattern:"iPhone[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)",alias:"iPhone"},{pattern:"iPhone[^;]*;.+OS (\\d+)",alias:"iPhone"}],ipad:[{pattern:"iPad[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"iPad"},{pattern:"iPad[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"iPad"},{pattern:"iPad[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)",alias:"iPad"},{pattern:"iPad[^;]*;.+OS (\\d+)",alias:"iPad"}],ipod:[{pattern:"iPod[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"iPod"},{pattern:"iPod[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"iPod"},{pattern:"iPod[^;]*;.+OS (\\d+)[^0-9\\s ](\\d+)",alias:"iPod"},{pattern:"iPod[^;]*;.+OS (\\d+)",alias:"iPod"}],windowsphone:[{pattern:"Windows Phone OS (\\d+)[^0-9\\s ](\\d+)",alias:"WindowsPhone"},{pattern:"Windows Phone (\\d+)",alias:"WindowsPhone"}],blackberry:[{pattern:"BlackBerry (\\d+)",alias:"BlackBerry"}],symbian:[{pattern:"SymbianOS/(\\d+)[^0-9\\s ](\\d+)",alias:"SymbianOS"}]},browser:{ie:[{pattern:"MSIE (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"MSIE"},{pattern:"MSIE (\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"MSIE"},{pattern:"MSIE (\\d+)[^0-9\\s ](\\d+)",alias:"MSIE"},{pattern:"MSIE (\\d+)",alias:"MSIE"},{pattern:"Trident/[^\\s ]+; [^\\)]*rv\\:(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"MSIE"},{pattern:"Trident/[^\\s ]+; [^\\)]*rv\\:(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"MSIE"},{pattern:"Trident/[^\\s ]+; [^\\)]*rv\\:(\\d+)[^0-9\\s ](\\d+)",alias:"MSIE"},{pattern:"Trident/[^\\s ]+; [^\\)]*rv\\:(\\d+)",alias:"MSIE"}],edge:[{pattern:"Edge/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"Edge"},{pattern:"Edge/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"Edge"},{pattern:"Edge/(\\d+)[^0-9\\s ](\\d+)",alias:"Edge"},{pattern:"Edge/(\\d+)",alias:"Edge"}],iemobile:[{pattern:"IEMobile[/ ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"IEMobile"},{pattern:"IEMobile[/ ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"IEMobile"},{pattern:"IEMobile[/ ](\\d+)[^0-9\\s ](\\d+)",alias:"IEMobile"},{pattern:"IEMobile[/ ](\\d+)",alias:"IEMobile"}],chrome:[{pattern:"Chrome/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"Chrome"},{pattern:"Chrome/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"Chrome"},{pattern:"Chrome/(\\d+)[^0-9\\s ](\\d+)",alias:"Chrome"},{pattern:"Chrome/(\\d+)",alias:"Chrome"}],safari:[{pattern:"Version/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[s ](Mobile/[0-9a-zA-Z]+[s ])?Safari",alias:"Safari"},{pattern:"Version/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[s ](Mobile/[0-9a-zA-Z]+[s ])?Safari",alias:"Safari"},{pattern:"Version/(\\d+)[^0-9\\s ](\\d+)[s ](Mobile/[0-9a-zA-Z]+[s ])?Safari",alias:"Safari"},{pattern:"Version/(\\d+)[s ](Mobile/[0-9a-zA-Z]+[s ])?Safari",alias:"Safari"}],firefox:[{pattern:"Firefox/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"Firefox"},{pattern:"Firefox/(\\d+)[^0-9\\s ](\\d+)",alias:"Firefox"},{pattern:"Firefox/(\\d+)",alias:"Firefox"}],opera:[{pattern:"Opera (\\d+)[^0-9\\s ](\\d+)",alias:"Opera"},{pattern:"Opera/.+ Version/(\\d+)[^0-9\\s ](\\d+)",alias:"Opera"}],operamini:[{pattern:"Opera Mini/(\\d+)[^0-9\\s ](\\d+)",alias:"OperaMini"}],operamobile:[{pattern:"Opera Mobi/.+ Version/(\\d+)[^0-9\\s ](\\d+)",alias:"OperaMobile"}],ucbrowser:[{pattern:"UC Browser[ /]?(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"UCBrowser"},{pattern:"UCBrowser/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"UCBrowser"}],qqbrowser:[{pattern:" QQBrowser/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"QQBrowser"},{pattern:" QQBrowser/(\\d+)[^0-9\\s ](\\d+)",alias:"QQBrowser"},{pattern:" QQBrowser/(\\d+)",alias:"QQBrowser"}],mqqbrowser:[{pattern:" MQQBrowser/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"MQQBrowser"},{pattern:" MQQBrowser/(\\d+)[^0-9\\s ](\\d+)",alias:"MQQBrowser"},{pattern:" MQQBrowser/(\\d+)",alias:"MQQBrowser"}],blackberry:[{pattern:"BlackBerry.+ Version/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"BlackBerry"}],mqq:[{pattern:"SQ_[^/]+ QQ/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"MQQ"},{pattern:"SQ_[^/]+ QQ/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"MQQ"},{pattern:"SQ_[^/]+ QQ/(\\d+)[^0-9\\s ](\\d+)",alias:"MQQ"},{pattern:"SQ_[^/]+ QQ/(\\d+)",alias:"MQQ"}],qq:[{pattern:"QQ/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"QQ"},{pattern:"QQ/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"QQ"},{pattern:"QQ/(\\d+)[^0-9\\s ](\\d+)",alias:"QQ"},{pattern:"QQ/(\\d+)",alias:"QQ"}],wechat:[{pattern:"MicroMessenger/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"WeChat"},{pattern:"MicroMessenger/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"WeChat"},{pattern:"MicroMessenger/(\\d+)[^0-9\\s ](\\d+)",alias:"WeChat"},{pattern:"MicroMessenger/(\\d+)",alias:"WeChat"}],tbs:[{pattern:"TBS/(\\d+)",alias:"TBS"}],aliapp:[{pattern:"AliApp\\(AP/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"AliApp"},{pattern:"AliApp\\(AP/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"AliApp"},{pattern:"AliApp\\(AP/(\\d+)[^0-9\\s ](\\d+)",alias:"AliApp"},{pattern:"AliApp\\(AP/(\\d+)",alias:"AliApp"}]},engine:{trident:[{pattern:"Trident/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"Trident"},{pattern:"Trident/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"Trident"},{pattern:"Trident/(\\d+)[^0-9\\s ](\\d+)",alias:"Trident"},{pattern:"Trident/(\\d+)",alias:"Trident"}],webkit:[{pattern:"WebKit/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"WebKit"},{pattern:"WebKit/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"WebKit"},{pattern:"WebKit/(\\d+)[^0-9\\s ](\\d+)",alias:"WebKit"},{pattern:"WebKit/(\\d+)",alias:"WebKit"}],gecko:[{pattern:"Gecko/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"Gecko"},{pattern:"Gecko/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"Gecko"},{pattern:"Gecko/(\\d+)[^0-9\\s ](\\d+)",alias:"Gecko"},{pattern:"Gecko/(\\d+)",alias:"Gecko"}],presto:[{pattern:"Presto/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"Presto"},{pattern:"Presto/(\\d+)[^0-9\\s ](\\d+)[^0-9\\s ](\\d+)",alias:"Presto"},{pattern:"Presto/(\\d+)[^0-9\\s ](\\d+)",alias:"Presto"},{pattern:"Presto/(\\d+)",alias:"Presto"}]}},g=function(a,b){var f,g,h,i,c={major:-1,minor:-1,patch:-1,build:-1,"short":-1,version:"",name:""},d=new RegExp(b.pattern,"i"),e=null;if(d.lastIndex=0,null!=(e=d.exec(a))){for(f=[],g=0,h=0,i=1;i<e.length;i++)g=e[i],/^[\d]+$/.test(g)&&f.push(Number(g));h=f.length,c.major=h>0?f[0]:-1,c.minor=h>1?f[1]:-1,c.patch=h>2?f[2]:-1,c.build=h>3?f[3]:-1,c.short=Number(c.major>-1?c.major+(c.minor>-1?"."+c.minor:".0"):-1),c.version=f.join("."),c.name=b.alias}return c},h=function(a,b){var e,f,c=null,d={};for(e in b)if(b.hasOwnProperty(e))if(c=b[e],"[object Array]"==Object.prototype.toString.call(c))for(f=0;f<c.length&&(d[e]=g(a,c[f]),!(d[e].version&&d[e].major>-1));f++);else d[e]=g(a,c);return d},i=function(a){var b=f,c={os:h(a,b["os"]),browser:h(a,b["browser"]),engine:h(a,b["engine"])};return c},j=null,k=function(a){var b=String(a),c=/^[\d]+$/;return c.test(b)},l=function(a){var j,b=i(e),c=b.os,d=a.split(/[\s]*,[\s]*/),f=d.length,g=null,h={};for(j=0;f>j;j++)g=d[j].split(/[\s]*=[\s]*/),h[g[0]]=Number(g[1]);return c.android.major>0||c.ios.major>0||c.windowsphone.major>0||c.blackberry.major>0||c.symbian.major>0?h["mobile"]:h["desktop"]},m=function(){var g,h,i,j,m,n,o,p,e=document.documentElement,f=document.body;if(!e||!f)return!1;try{g=e.getAttribute("data-adaptor-design")||a,h=e.getAttribute("data-adaptor-base")||b,i=Number(e.getAttribute("data-adaptor-min")||c),j=Number(e.getAttribute("data-adaptor-max")||d),m=Math.max(e.clientWidth,f.clientWidth),n=window.innerWidth||m,g=k(g)?Number(g):l(g),e.setAttribute("data-adaptor-design",g),o=n/g,p=h*o,i>p&&(p=i),p>j&&(p=j),o=p/h,e.style.fontSize=p+"px",e.setAttribute("data-adaptor-percentage",o)}catch(q){return!1}return!0},n=function(){setTimeout(m,300)};j=setTimeout(function(){j&&(clearTimeout(j),j=null),m()?"onorientationchange"in window?window.addEventListener("orientationchange",n,!1):"addEventListener"in window?window.addEventListener("resize",n,!1):"attachEvent"in window?window.attachEvent("onresize",n):window.onresize=n:setTimeout(arguments.callee,0)},0),function(){var f,a=i(e),b=[],c=function(a){var d,c=null;for(d in a)a.hasOwnProperty(d)&&(c=a[d],c.major>-1&&(b.push(d),b.push(d+c.major)))},d=function(){var f,g,a=document.documentElement,c=a.className,d=c.split(/[\s ]+/),e=[];for(f=0;f<d.length;f++)d[f]&&e.push(d[f]);g=e.concat(b),a.className=g.join(" ")};for(f in a)a.hasOwnProperty(f)&&c(a[f]);d()}(),window["RemAdaptor"]={getRemAdaptorAttribute:function(a){var b=document.documentElement;return b.getAttribute("data-adaptor-"+a)},getRemAdaptorDesignValue:function(){var a=Number(this.getRemAdaptorAttribute("design")||0);return isNaN(a)?0:a},getRemAdaptorBaseValue:function(){var a=Number(this.getRemAdaptorAttribute("base")||0);return isNaN(a)?0:a},getRemAdaptorMinValue:function(){var a=Number(this.getRemAdaptorAttribute("min")||0);return isNaN(a)?0:a},getRemAdaptorMaxValue:function(){var a=Number(this.getRemAdaptorAttribute("max")||0);return isNaN(a)?0:a},getRemAdaptorPercentageValue:function(){var a=Number(this.getRemAdaptorAttribute("percentage")||0);return isNaN(a)?0:a},filterScript:function(a){var b=document.createTextNode(a),c=document.createElement("div"),d="";return c.appendChild(b),d=c.innerHTML,b=null,c=null,d},getParameter:function(a,b){var c=b||document.location.search,d=new RegExp("[?&]"+a+"=([^&#?]*)","g"),e=d.exec(c),f=null;return null!=e&&(f=e[1]),null!=f&&(f=this.filterScript(f)),d=null,f},parse:i,env:i(e)}}("mobile=750,desktop=1920",100,25,100);</script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <style>
+    
+    .row{margin: 0 auto;padding: 0;}
+    .body{background-position: center;width: 100%;height: auto;padding: 0;margin: 0}
+    .vertical{display:-webkit-box;display:-moz-box;display:box;-webkit-box-orient:vertical;-moz-box-orient:vertical;box-orient:vertical}
+    .horizontal{display:-webkit-box;display:-moz-box;display:box;-webkit-box-orient:horizontal;-moz-box-orient:horizontal;box-orient:horizontal}
+
+    .img1{background-image: url("img/b1@2x.png");background-position: center;height: 800px;min-width: 1152px;}
+    .img2{background-image: url("img/b2@2x.png");background-position: center;height: 800px;min-width: 1152px;}
+
+    .topview-bg{position: fixed; height:100px;width:100%;top:0;left:0;background:rgba(0,0,0,1);opacity:0.4;}
+
+    .topview-content{position: fixed; height: 100px;min-width: 1152px;width: auto;;top:0;left: 380px;right: 380px;background-position: center;}
+
+
+    .cellos_icon{position: absolute; width:38px;height: 38px;left: 0;top: 31px;}
+    .text-cellos{position: absolute;width:auto;height:25px;font-size:26px;top: 37.5px;left: 50px;font-family:STXihei;color:rgba(255,255,255,1);line-height: 25px}
+
+    .navigation-text{position: absolute;width: auto;height:18px;font-size:18px;top: 42px;font-family:STXihei;color:rgba(255,255,255,1);line-height:18px;}
+
+    .title{color:rgba(49,49,49,1);font-size:36px;line-height:26px;font-family:STXihei;margin-top:25px}
+    .en_tile{color:rgba(187,187,187,1);font-size:18px;margin-top:103px;font-family:STXihei;line-height:18px}
+    .line{width:60px;height:2px;background:rgba(49,49,49,1);margin-top:13px;align-content:center}
+
+    .cview{height: auto;margin-top: 76px}
+    .ctitle{width:auto;height:28px;font-size:30px;font-family:STXihei;color:rgba(49,49,49,1);line-height:30px}
+    .cline{width:60px;height:2px;background:rgba(49,49,49,1)}
+    .ccontent{width:467px;height:53px;font-size:18px;font-family:STXihei;color:rgba(114,113,113,1);line-height:36px}
+    .divide{width:1170px;height:2px;background:rgba(229,229,238,1)}
+
+    .img3{background-image: url("img/bg2@2x.png");background-position: center;height: 524px;min-width: 1152px;margin-top:228px;width: 100%;}
+    .intro_en{width:auto;height: 13px;font-size:24px;font-family:STXihei;color:rgba(187,187,187,1);line-height:26px;}
+    .intro_title{width:auto;height:39px;font-size:42px;font-family:STXihei;color:rgba(255,255,255,1);line-height:15px;}
+    .intro_content{width:1132px;height:81px;font-size:18px;font-family:STXihei;color:rgba(255,255,255,1);line-height:32px;}
+
+    .news-img-bg{width:70px;height:70px;background:rgba(65,104,255,1);margin-left: 473px}
+    .news-title{width:100%;height:18px;font-size:18px;font-family:STXihei;color:rgba(51,51,51,1);line-height:31px}
+    .news-content{width:787px;height:64px;font-size:14px;font-family:STXihei;color:rgba(153,153,153,1);line-height:24px}
+    .news-line{width:952px;height:2px;border-style:dashed;border-width:1px;border-color:#CCCCCC}
+
+    .bottom_bg1{width:100%;height:305px;background:rgba(49,49,49,1)}
+    .contact-date-day{width:auto;font-size:20px;font-family:STXihei;color:rgba(255,255,255,1);line-height:31px;}
+    .contact-date-year-month{width:auto;height:11px;font-size:14px;font-family:STXihei;color:rgba(255,255,255,1);line-height:31px;}
+    .contact-title{height:15px;font-size:16px;font-family:STXihei;color:rgba(255,255,255,1);line-height:30px;}
+    .contact-line{width:51px;height:2px;background:rgba(255,255,255,1);margin-top: 15px}
+    .contact-content{width:334px;height:auto;font-size:14px;font-family:STXihei;color:rgba(255,255,255,1);line-height:28px;margin-top: 10px}
+    .bottom_bg2{width:100%;height:51px;background:rgba(53,53,53,1);margin: 0}
+    .bottom_bg2 div{width:100%;height:51px;font-size:14px;font-family:STXihei;color:rgba(255,255,255,0.6);line-height:51px;}
+    .bottom_line{width:100%;height:2px;background:rgba(42,42,42,1);}
+
+    </style>
+
+    <script type="text/javascript">
+
+    function scrollToHome(){$("body,html").animate({
+         scrollTop: 0}, 300);
+        }
+
+    function scrollToProduct(){$("body,html").animate({
+         scrollTop: 800 * screen.width/1920}, 300);
+        }
+
+    function scrollToCompany(){$("body,html").animate({ scrollTop: 2800* screen.width/1920}, 500);}
+
+    function scrollToNews(){$("body,html").animate({ scrollTop: 3324* screen.width/1920}, 600);}
+
+    function scrollToAbout() {$("body,html").animate({ scrollTop: 4439* screen.width/1920}, 600);}
+
+     window.onresize = function(){
+                    changeMargin();
+                };
+                function changeMargin(){
+                    var docWidth = document.body.clientWidth;
+                    if(docWidth >= 1152){
+                        $('.topview-content').css({
+                            'left': 380 + (docWidth - 1920)/2 ,
+                        });
+                        $('.cview').css({
+                            'margin-left': (docWidth - 1920)/2,
+                        });
+                        $('.intro').css({
+                            'left': (docWidth * 380 / 1920) ,
+                        });
+                        $('.news_id').css({
+                            'margin-left': (docWidth - 1920)/2,
+                        });
+                        $('.bottom_bg1').css({
+                            'padding-left': 384 + (docWidth - 1920)/2 
+                        });
+                    }
+                }
+    </script>
+
+
+
+</head>
+
+
+<body style="overflow-x: hidden;overflow-y: auto">
+
+        <!-- 轮播 -->
+        <div id="myCarousel"class="carousel slide"data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel"data-slide-to="0"class="active"></li>
+                <li data-target="#myCarousel"data-slide-to="1"></li>
+            </ol>   
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="img2"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img2"></div>
+                </div>
+            </div>
+        </div> 
+
+
+
+        <div class="topview-bg"></div>
+
+        <div class="topview-content">
+            <img class="cellos_icon" src="img/cellos_icon.png">
+            <div class="text-cellos">三泰互联</div>
+                <div id="nav-bar">
+                    <a id = "0" class=" navigation-text" href="javascript:void(0)"  onclick="scrollToHome()" role="button" style="left:624px ">首页</a>
+                    <a id = "1" class=" navigation-text" href="javascript:void(0)" onclick="scrollToProduct()" role="button" style="left:704px">产品服务</a>
+                    <a id = "2"  class=" navigation-text" href="javascript:void(0)" onclick="scrollToCompany()" role="button" style="left:804px">关于三泰</a>
+                    <a id = "3"  class=" navigation-text" href="javascript:void(0)" onclick="scrollToNews()" role="button" style="left:904px">新闻资讯</a>
+                    <a id = "4"  class=" navigation-text" href="javascript:void(0)" onclick="scrollToAbout()" role="button" style="left:1004px">联系我们</a>
+            </div> 
+        </div>
+
+
+         <!-- 产品介绍 -->
+         <div class="productview">
+            <div class="en_tile text-center">PRODUCT INTRODUCTION</div>
+            <div class="title text-center">产品介绍</div>
+            <center>
+                <div class="line"></div>            
+            </center>
+        </div>
+   
+
+
+       <!-- 智能门禁 -->
+       <div class="cview horizontal" >
+            <img src="img/image1.png" style="width: 584px;height: 390px;margin-left: 384px">
+            <div class="vertical" style="margin-left: 70px">
+                    <div class="ctitle text-left" style="margin-top: 59px">智能门禁</div>
+                    <div class="line" style="margin-top: 20px "></div>            
+                    <div class="ccontent text-left" style="margin-top: 46px">搭载基于深度学习算法的人脸识别门禁系统，可动态识别人脸，对住户访客进行分类管理。软硬一体化方案助力社区快速完成升级，打造更安全便捷的智慧社区。</div>
+            </div>
+
+       </div>
+  
+
+        <center>
+            <div class="divide" style="margin-top: 120px"></div>            
+        </center>
+
+        <!-- 智能停车场 -->  
+        <div class="cview horizontal">
+            <div class="vertical">
+                <div class="ctitle" style="margin-left: 742px;margin-top: 59px";>智能停车场</div>
+                <div class="line" style="margin-left:833px;margin-top: 20px "></div>            
+                <div class="ccontent" style="margin-left: 437px;margin-top: 46px">高度集成化智能停车场解决方案，可精准识别车牌，自助缴费，实现不停车通行。同时利用声位导航结合GPS跟踪定位技术，可APP快速找车位和反向寻车。</div>
+            </div>
+            <img src="img/image2.png" style="margin-left: 57px;margin-top: 20px;width: 584px;height: 390px;";>
+        </div>      
+
+        <center>
+        <div class="divide" style="margin-top: 120px"></div>            
+        </center>
+
+
+        <!-- 智能安防 -->
+        <div class="cview horizontal" >
+            <img src="img/image3.png" style="width: 584px;height: 390px;margin-left: 384px">
+            <div class="vertical" style="margin-left: 70px">
+                    <div class="ctitle text-left" style="margin-top: 59px">智能安防</div>
+                    <div class="line" style="margin-top: 20px "></div>            
+                    <div class="ccontent text-left" style="margin-top: 46px">覆盖全社区的摄像头、多重传感器、探测器及执行器等硬件设备，构建“预报型警报、自动化处理、公共区域全监控”安防体系。
+
+                            基于图像神经网络算法，智能识别高空抛物行为，对大楼24小时实时监测。</div>
+            </div>
+       </div>
+  
+
+        <center>
+            <div class="divide" style="margin-top: 120px"></div>            
+        </center>
+
+        <!-- 公司介绍 -->
+        <div class="img3 vertical" >
+
+            <center>
+            <div class="intro_en" style="margin-top: 120px;">COMPANY INFORMATION</div>                 
+            <div class="intro_title" style="margin-top: 52px">关于三泰</div>
+            <div class="intro_content" style="margin-top: 54px;">三泰互联是由三泰控股（SZ002312)投资成立的全资子公司，全力打造Cellos智慧社区硬件操作系统，建立开发商、物业、第三方商户以及用户之间的闭环生态。
+                同时，自营智慧门禁、智慧停车场、社区安防、能源管控等核心应用；打造设备云、空间云、人力云、存储云、仓储云等云共享服务，重塑未来社区。</div>     
+                </center>
+        </div>
+
+          
+          <!-- 新闻资讯 -->
+
+        <div class="newsview">
+                    <div class="en_tile text-center">NEWS</div>
+                    <div class="title text-center">新闻资讯</div>
+                    <center>
+                    <div class="line"></div>            
+                    </center>
+            
+        </div> 
+
+  
+          <!-- 资讯1 -->
+          <div class = "horizontal news_id" style="margin-top: 36px;min-width: 1152px;">
+                <div class="news-img-bg">
+                    <div class="contact-date-day" style="position: absolute;margin-left: 26px;margin-top: 13px">15</div>
+                    <div class="contact-date-year-month" style="position: absolute;margin-left: 12px;margin-top: 33px">2018-07</div>
+                </div>   
+                <div class="vertical">
+                    <div class="news-title" style="margin-left:26px;">最新消息—Cellos智慧社区正式上线！</div>      
+                    <div class="news-content" style="margin-left:26px;margin-top: 20px ">近日，由三泰互联全力打造的智慧社区硬件操作系统-Cellos正式发布！此系统包含了智能人脸识别门禁，智能无人值守停车场，智能安防等核心功能模块，极大方便了小区住户的出入，也全面提升了小区的安保水平。系统内的硬件设备全部联网，运行状态可见可控，也极大提升了物业的管理效率。预计后期将会继续推出完整解决方案，敬请关注！</div>      
+                </div>
+          </div>
+          <center>
+                <div class="news-line" style="margin-top: 39px;"></div>      
+          </center>
+     
+  
+            <!-- 资讯2 -->
+            <div class = "horizontal news_id" style="margin-top: 36px;min-width: 1152px;">
+                    <div class="news-img-bg">
+                            <div class="contact-date-day" style="position: absolute;margin-left: 26px;margin-top: 13px">15</div>
+                            <div class="contact-date-year-month" style="position: absolute;margin-left: 12px;margin-top: 33px">2018-07</div>
+                    </div>   
+                    <div class="vertical">
+                    <div class="news-title" style="margin-left:26px;">全新智能门禁系统，开启“刷脸”时代！</div>      
+                    <div class="news-content" style="margin-left:26px;margin-top: 20px ">科幻片中常出现的未来人们畅通无阻穿行社区与房屋之间的场景，离我们有多远？也许就在眼前。全新人脸识别智能门禁系统，不用门禁卡，无需钥匙，也无需指纹，摄像机可自动抓拍采集住头像，并进行活体检测，动态识别住户身份，并自动开门。同时，遇到陌生人尾随进入，还可以进行报警，有效保证小区内外的安全。</div>      
+                </div>
+            </div>
+            <center>
+                    <div class="news-line" style="margin-top: 39px;"></div>      
+              </center>
+
+
+                <!-- 资讯3 -->
+                <div class = "horizontal news_id" style="margin-top: 36px;min-width: 1152px;">
+                        <div class="news-img-bg">
+                                <div class="contact-date-day" style="position: absolute;margin-left: 26px;margin-top: 13px">15</div>
+                                <div class="contact-date-year-month" style="position: absolute;margin-left: 12px;margin-top: 33px">2018-07</div>
+                        </div>   
+                        <div class="vertical">
+                        <div class="news-title" style="margin-left:26px;">当AI遇上物联网，社区焕发新面貌</div>      
+                        <div class="news-content" style="margin-left:26px;margin-top: 20px ">近年来，人工智能技术席卷了多个行业，如医疗，教育，制造业等，带来了许多革命性的颠覆变化。那当AI遇到传统的社区，能产生什么样的化学变化呢？三泰互联采用多种AI技术，如图像识别，人脸识别，智能语音，深度学习算法等，全力构建以物联网为基础的智能硬件系统，以社区为现实场景，让AI落地，切实改善居民的生活体验。</div>  </div>
+                    </div>
+                    <center>
+                            <div class="news-line" style="margin-top: 39px;"></div>      
+                      </center>
+
+                <!-- 联系方式 -->
+                <div class="bottom_bg1 horizontal" style="margin-top: 231px;min-width: 1152px;padding-top: 96px;padding-left: 384px">
+
+                    <div class="vertical" style="margin-left: 0px;width: 384px;">
+                        <center>
+                        <div class="contact-title" >公司地址</div>
+                        <div class="contact-line" ></div>
+                        <div class="contact-content">深圳市南山区粤海街道高新南九道西北工业大学三航科技大厦10楼08室</div>
+                        </center>
+                    </div>
+
+                    <div class="vertical" style="margin-left: 0px;width: 384px;">
+                            <center>
+                        <div class="contact-title" >联系电话</div>
+                        <div class="contact-line" ></div>
+                        <div class="contact-content">0755-26928760</div>
+                    </center>
+
+                    </div>
+
+                    <div class="vertical" style="margin-left: 0px;width: 384px;">
+                            <center>
+                        <div class="contact-title">电子邮箱</div>
+                        <div class="contact-line" ></div>
+                        <div class="contact-content">business@santaihulian.com</div>
+                    </center>
+
+                    </div>
+
+                </div>
+
+                <div class="bottom_line"></div>
+                <!-- 备案号 -->        
+
+
+                <div class="bottom_bg2">
+
+                <center>
+                    <div>粤ICP备18049596号-1 Copyright ©2018 三泰互联  Inc.All Rights Reserved.</div>
+                </center>
+                </div>       
+
+
+     
+</body>
+
+</html>
+
+
+

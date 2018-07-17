@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0,-webkit-transform，- webkit -transform-origin "/>  
+    <title>三泰互联</title>
+    <link rel="stylesheet"href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   
+
+    <style>
+    html{font-size:10px;} 
+    body{font-size:10px;font-size:1.0rem ;} 
+    @media only screen and (min-width: 320px){
+    html {
+        font-size: 1.6666667px !important;
+    }
+    }
+
+    @media only screen and (min-width: 375px){
+    html {
+        font-size: 1.953125px !important;
+    }
+    }
+
+      @media only screen and (min-width: 414px){
+    html {
+        font-size: 2.15625px !important;
+    }
+    }
+
+    @media only screen and (min-width: 640px){
+    html {
+        font-size: 3.333333px !important;
+    }
+    }
+    @media only screen and (min-width: 750px){
+    html {
+        font-size: 3.90625px !important;
+    }
+    }
+    @media only screen and (min-width: 1242px){
+    html {
+        font-size: 6.46875px !important;
+    }
+    }
+
+      @media only screen and (min-width: 1280px){
+    html {
+        font-size: 6.6666667px !important;
+    }
+    }
+
+     @media only screen and (min-width: 1920px){
+    html {
+        font-size: 10px !important;
+    }
+    }
+
+    .row{margin: 0;padding: 0}
+    .top-bar-bg{height:10rem;max-width: 100%;background:rgba(0,0,0,1);opacity:0.4;}
+    .navigation-bar{max-width:100%;height:10rem;background:#000000;opacity:0.4}
+    .text-cellos{width:auto;height:2.5rem;font-size:2.6rem;font-family:STXihei;color:rgba(255,255,255,1);line-height:3.4rem;}
+    .navigation-text{width:auto;height:1.8rem;font-size:1.8rem;font-family:STXihei;color:rgba(255,255,255,1);line-height:2.8rem;}
+    .title{color:rgba(49,49,49,1);font-size:3.6rem;line-height:2.6rem;font-family:STXihei;margin-top:2.5rem}
+    .en_tile{color:rgba(187,187,187,1);font-size:1.8rem;margin-top:10.3rem;font-family:STXihei;line-height:2.6rem}
+    .line{width:6rem;height:0.2rem;background:rgba(49,49,49,1);margin-top:1.3rem;align-content:center}
+    .ctitle{width:auto;height:2.8rem;font-size:3rem;font-family:STXihei;color:rgba(49,49,49,1);line-height:2.6rem}
+    .cline{width:6.0rem;height:0.2rem;background:rgba(49,49,49,1)}
+    .ccontent{width:46.7rem;height:5.3rem;font-size:1.8rem;font-family:STXihei;color:rgba(114,113,113,1);line-height:3.6rem}
+    .divide{width:60%;height:0.2rem;background:rgba(229,229,238,1)}
+    .intro-en{width:auto;height: 1.3rem;font-size:2.4rem;font-family:STXihei;color:rgba(187,187,187,1);line-height:2.6rem;}
+    .intro-title{width:auto;height:3.9rem;font-size:4.2rem;font-family:STXihei;color:rgba(255,255,255,1);line-height:1.5rem;}
+    .intro-content{width:auto;height:8.1rem;font-size:1.8rem;font-family:STXihei;color:rgba(255,255,255,1);line-height:3.2rem;}
+    .news-img-bg{width:7rem;height:7rem;background:rgba(65,104,255,1)}
+    .news-title{width:100%;height:1.8rem;font-size:1.8rem;font-family:STXihei;color:rgba(51,51,51,1);line-height:3.1rem}
+    .news-content{width:100%;height:6.4rem;font-size:1.4rem;font-family:STXihei;color:rgba(153,153,153,1);line-height:2.4rem}
+    .news-line{width:100%;height:0.2rem;border-style:dashed;border-width:0.1rem;border-color:#CCCCCC}
+    .bottom_bg1{max-width:100%;height:30.5rem;background:rgba(49,49,49,1)}
+    .contact-date-day{width:auto;font-size:2rem;font-family:STXihei;color:rgba(255,255,255,1);line-height:3.1rem;}
+    .contact-date-year-month{width:auto;height:1.1rem;font-size:1.4rem;font-family:STXihei;color:rgba(255,255,255,1);line-height:3.1rem;}
+    .contact-title{height:1.5rem;font-size:1.6rem;font-family:STXihei;color:rgba(255,255,255,1);line-height:3rem;display: inline-block;}
+    .contact-line{width:5.1rem;height:0.2rem;background:rgba(255,255,255,1);}
+    .contact-content{width:33.4rem;height:auto;font-size:1.4rem;font-family:STXihei;color:rgba(255,255,255,1);line-height:2.8rem;}
+    .bottom_bg2{max-width:100%;height:5.1rem;background:rgba(53,53,53,1);margin: 0}
+    .bottom_bg2 div{max-width:100%;height:5.1rem;font-size:1.4rem;font-family:STXihei;color:rgba(255,255,255,0.6);line-height:5.1rem;}
+    .bottom_line{max-width:100%;height:0.2rem;background:rgba(42,42,42,1);}
+
+    .carousel-item img{display:block;height:auto;max-width:100%}
+
+
+
+    </style>
+
+    <script type="text/javascript">
+
+    function scrollToProduct(){$("body,html").animate({
+         scrollTop: 800 * screen.width/1920}, 300);
+        }
+
+    function scrollToCompany(){$("body,html").animate({ scrollTop: 2800* screen.width/1920}, 500);}
+
+    function scrollToNews(){$("body,html").animate({ scrollTop: 3324* screen.width/1920}, 600);}
+
+    function scrollToAbout() {$("body,html").animate({ scrollTop: 3800* screen.width/1920}, 600);}
+
+    </script>
+
+
+
+
+</head>
+
+
+<body id="panel">
+    <div style="position: absolute;">
+      <div style="position: block;">
+            <!-- 轮播 -->
+            <div id="myCarousel"class="carousel slide"data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel"data-slide-to="0"class="active"></li>
+                    <li data-target="#myCarousel"data-slide-to="1"></li>
+                </ol>   
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="img/b1@2x.png"alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="img/b2@2x.png"alt="Second slide">
+                  </div>
+                </div>
+            </div> 
+
+
+           <div style="position: absolute;width:100%;top: 0;left: 0" class="top-bar-bg"></div>
+           <img src="img/cellos_icon.png" style="position: absolute;width: 3.8rem;height: 3.8rem; top: 3.3rem;left: 38rem">
+           <div style="position: absolute;width:auto;top: 3.7rem;left: 43rem" class="text-cellos">三泰互联</div>
+
+ 
+      <div id="nav_bar">
+           <a id = "0" class="btn navigation-text" href="#"  role="button" style="position: absolute;top: 3.3rem;left:103rem ">首页</a>
+           <a id = "1" class="btn navigation-text" href="javascript:void(0)" onclick="scrollToProduct()" role="button" style="position: absolute;top: 3.3rem;left:112rem">产品服务</a>
+           <a id = "2"  class="btn navigation-text" href="javascript:void(0)" onclick="scrollToCompany()" role="button" style="position: absolute;top: 3.3rem;left:124rem">关于三泰</a>
+           <a id = "3"  class="btn navigation-text" href="javascript:void(0)" onclick="scrollToNews()" role="button" style="position: absolute;top: 3.3rem;left:136rem">新闻资讯</a>
+           <a id = "4"  class="btn navigation-text" href="javascript:void(0)" onclick="scrollToAbout()" role="button" style="position: absolute;top: 3.3rem;left:148rem">联系我们</a>
+     </div> 
+    </div>
+
+    <!-- 产品介绍 -->
+    <div class="en_tile text-center">PRODUCT INTRODUCTION</div>
+    <div class="title text-center">产品介绍</div>
+    <center>
+        <div class="line"></div>            
+    </center>
+   
+
+
+    <!-- 智能门禁 -->
+    <div class="row" style="margin-left: 38.4rem;margin-right: 38.4rem">
+            <img src="img/image1.png" style="margin-top: 7.6rem;max-width: 58.4rem;height: 39rem">
+            <div>
+                <div class="ctitle text-left" style="margin-left: 7.0rem;margin-top: 13.5rem">智能门禁</div>
+                <div class="line" style="margin-left:7.0rem;margin-top: 2.0rem "></div>            
+                <div class="ccontent text-left" style="margin-left: 7.0rem;margin-top: 4.6rem">搭载基于深度学习算法的人脸识别门禁系统，可动态识别人脸，对住户访客进行分类管理。软硬一体化方案助力社区快速完成升级，打造更安全便捷的智慧社区。</div>
+            </div>
+        </div>       
+
+        <center>
+            <div class="divide" style="margin-top: 12rem"></div>            
+        </center>
+
+      <!-- 智能停车场 -->
+
+      <div class="row" style="margin:0;padding: 0">
+            <div>
+                <div class="ctitle" style="margin-left: 74.2rem;margin-top: 13.5rem";>智能停车场</div>
+                <div class="line" style="margin-left:83.3rem;margin-top: 2rem "></div>            
+                <div class="ccontent" style="margin-left: 43.7rem;margin-top: 4.6rem">高度集成化智能停车场解决方案，可精准识别车牌，自助缴费，实现不停车通行。同时利用声位导航结合GPS跟踪定位技术，可APP快速找车位和反向寻车。</div>
+            </div>
+            <img src="img/image2.png" style="margin-left: 96.1rem;margin-top: -20rem;max-width: 58.4rem;height: 39rem;";>
+        </div>      
+
+    <center>
+       <div class="divide" style="margin-top: 12rem"></div>            
+    </center>
+
+
+
+    <!-- 智能安防 -->
+
+    <div class="row" style="margin-left: 38.4rem;margin-right: 38.4rem">
+            <img src="img/image3.png" style="margin-top: 7.6rem;max-width: 58.4rem;height: 39rem">
+            <div>
+                <div class="ctitle text-left" style="margin-left: 7rem;margin-top: 13.5rem">智能安防</div>
+                <div class="line" style="margin-left:7rem;margin-top: 2rem "></div>            
+                <div class="ccontent text-left" style="margin-left: 7rem;margin-top: 4.6rem">覆盖全社区的摄像头、多重传感器、探测器及执行器等硬件设备，构建“预报型警报、自动化处理、公共区域全监控”安防体系。
+
+                        基于图像神经网络算法，智能识别高空抛物行为，对大楼24小时实时监测。</div>
+            </div>
+        </div>       
+
+        <center>
+            <div class="divide" style="margin-top: 12rem"></div>            
+        </center>
+
+
+
+         <!-- 公司介绍 -->
+         <div class="intro" style="position: relative;margin-top:22.8rem;">
+                <img src="img/bg2@2x.png" style="height:52.4rem;max-width:100%;">
+                <div style="position: absolute;top: 0;left: 0">
+                  <center>
+                       <div class="intro-en" style="margin-top: 12rem">COMPANY INFORMATION</div>                 
+                       <div class="intro-title" style="margin-top: 5.2rem">关于三泰</div>
+                       <div class="intro-content" style="margin-top: 5.4rem;margin-left: 40.2rem;margin-right: 40.2rem">三泰互联是由三泰控股（SZ002312)投资成立的全资子公司，全力打造Cellos智慧社区硬件操作系统，建立开发商、物业、第三方商户以及用户之间的闭环生态。
+                        同时，自营智慧门禁、智慧停车场、社区安防、能源管控等核心应用；打造设备云、空间云、人力云、存储云、仓储云等云共享服务，重塑未来社区。</div>     
+                  </center>
+                </div>
+  
+          </div>
+   
+  
+          <!-- 新闻资讯 -->
+          <div class="en_tile text-center">NEWS</div>
+          <div class="title text-center">新闻资讯</div>
+          <center>
+          <div class="line"></div>            
+          </center>
+  
+  
+          <!-- 资讯1 -->
+          <div class = "row" style="margin-top: 3.6rem;margin-left: 25%;margin-right:25%;">
+              <div class="news-img-bg">
+                      <div class="contact-date-day" style="position: absolute;margin-left: 2.6rem;margin-top: 1.3rem">15</div>
+                      <div class="contact-date-year-month" style="position: absolute;margin-left: 1.2rem;margin-top: 3.3rem">2018-07</div>
+              </div>   
+              <div class="col">
+              <div class="news-title" style="margin-left:2.6rem;">最新消息—Cellos智慧社区正式上线！</div>      
+              <div class="news-content" style="margin-left:2.6rem;margin-top: 2rem ">近日，由三泰互联全力打造的智慧社区硬件操作系统-Cellos正式发布！此系统包含了智能人脸识别门禁，智能无人值守停车场，智能安防等核心功能模块，极大方便了小区住户的出入，也全面提升了小区的安保水平。系统内的硬件设备全部联网，运行状态可见可控，也极大提升了物业的管理效率。预计后期将会继续推出完整解决方案，敬请关注！</div>      
+          </div>
+              <div class="news-line" style="margin-top: 3.9rem;"></div>      
+          </div>
+     
+  
+          <!-- 资讯2 -->
+          <div class = "row" style="margin-top: 3.6rem;margin-left: 25%;margin-right:25%;">
+                  <div class="news-img-bg">
+                          <div class="contact-date-day" style="position: absolute;margin-left: 2.6rem;margin-top: 1.3rem">12</div>
+                          <div class="contact-date-year-month" style="position: absolute;margin-left: 1.2rem;margin-top: 3.3rem">2018-06</div>
+                  </div>   
+                  <div class="col">
+                  <div class="news-title" style="margin-left:2.6rem;">全新智能门禁系统，开启“刷脸”时代！</div>      
+                  <div class="news-content" style="margin-left:2.6rem;margin-top: 2rem ">科幻片中常出现的未来人们畅通无阻穿行社区与房屋之间的场景，离我们有多远？也许就在眼前。全新人脸识别智能门禁系统，不用门禁卡，无需钥匙，也无需指纹，摄像机可自动抓拍采集住头像，并进行活体检测，动态识别住户身份，并自动开门。同时，遇到陌生人尾随进入，还可以进行报警，有效保证小区内外的安全。</div>      
+              </div>
+                  <div class="news-line" style="margin-top: 3.9rem;"></div>      
+              </div>
+  
+     
+  
+          <!-- 资讯3 -->
+          <div class = "row" style="margin-top: 3.6rem;margin-left: 25%;margin-right:25%;">
+                <div class="news-img-bg">
+                          <div class="contact-date-day"style="position: absolute;margin-left: 2.6rem;margin-top: 1.3rem">12</div>
+                          <div class="contact-date-year-month" style="position: absolute;margin-left: 1.2rem;margin-top: 3.3rem">2018-06</div>
+                  </div>   
+                  <div class="col">
+                  <div class="news-title" style="margin-left:2.6rem;">当AI遇上物联网，社区焕发新面貌</div>      
+                  <div class="news-content" style="margin-left:2.6rem;margin-top: 2rem ">近年来，人工智能技术席卷了多个行业，如医疗，教育，制造业等，带来了许多革命性的颠覆变化。那当AI遇到传统的社区，能产生什么样的化学变化呢？三泰互联采用多种AI技术，如图像识别，人脸识别，智能语音，深度学习算法等，全力构建以物联网为基础的智能硬件系统，以社区为现实场景，让AI落地，切实改善居民的生活体验。</div>  </div>
+                  <div class="news-line" style="margin-top: 3.9rem;"></div>      
+              </div>
+  
+  
+          <!-- 联系方式 -->
+  
+  
+          <div id="contact_id" class="bottom_bg1 row" style="margin-top: 23.1rem;margin-left: 0;margin-right: 0;padding-left: 20%;padding-right: 20%">
+          
+            <div style="width: 20%;">
+                <div class="contact-title" style="margin-top: 9.6rem">公司地址</div>
+                <div class="contact-line" style="margin-top: 1.5rem"></div>
+                <div class="contact-content" style="margin-top: 1rem">深圳市南山区粤海街道高新南九道西北工业大学三航科技大厦10楼08室</div>
+            </div>
+  
+            <div style="width: 20%;margin-left: 20%;">
+                <div class="contact-title" style="margin-left: 10%; margin-top: 9.6rem">联系电话</div>
+                <div class="contact-line" style="margin-left: 10%; margin-top: 1.5rem"></div>
+                <div class="contact-content" style="margin-left: 10%; margin-top: 1rem">0755-26928760</div>
+  
+            </div>
+  
+            <div style="width: 20%;margin-left: 20%;">
+                <div class="contact-title" style="margin-top: 9.6rem">电子邮箱</div>
+                <div class="contact-line" style="margin-top: 1.5rem"></div>
+                <div class="contact-content" style="margin-top: 1rem">business@santaihulian.com</div>
+            </div>
+  
+          </div>
+  
+          <div class="bottom_line"></div>
+          <!-- 备案号 -->        
+  
+  
+            <div class="bottom_bg2">
+        
+            <center>
+              <div>粤ICP备18049596号-1 Copyright ©2018 三泰互联  Inc.All Rights Reserved.</div>
+            </center>
+          </div>       
+  
+  
+
+
+    </div>
+</body>
+
+</html>
